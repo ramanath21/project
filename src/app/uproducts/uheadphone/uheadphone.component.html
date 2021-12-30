@@ -1,0 +1,28 @@
+<div class="top">
+    <h1>Headphones</h1>
+    <a class="a1" routerLink="/ahome">Home</a>&nbsp; &nbsp;
+    <a class="a1" routerLink="/uproducts">Product</a>
+  </div>
+
+
+<div class="mobile1">
+    
+    <div  *ngFor="let headphone of headphones; index as i " > 
+        <div class="body">
+            <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k7285u80/headphone/4/3/u/boat-rockerz-370-original-imafpdzhywghfabu.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+                <h3>Product id: {{headphone.id}}</h3>
+                 <h3>name:{{headphone.name}} {{headphone.description}}</h3>
+                 <h4>Cost:{{headphone.cost}}</h4>
+                 <button (click)= submit(headphone)>buy now</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+ <router-outlet></router-outlet>
+
+            
+

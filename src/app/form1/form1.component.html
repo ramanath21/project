@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a>
+    <div class="col-md-4" style="color:white;font-size:120%;"><b>admin cell </b></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="toggle-navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar1">
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+        <a class="nav-link" href="" routerLink="/adhome">Home</a></li>
+  
+   
+    <li class="nav-item">
+    <a class="nav-link" href="" routerLink="/home">LOGOUT</a></li>
+    </ul>
+    </div>
+    </nav>
+    <form id="adform" #myForm="ngForm" (ngSubmit)="onSub(myForm.value)">
+        <div class="container-fluid">    
+            <div class="row">
+              <div class="col-sm-12">
+                    
+              </div>
+             </div>    
+         </div>
+      
+        <br>
+        <div class="tablec"> 
+        <table class="frmtbl">
+            
+            <tr border="1" class="hdrow">
+                
+             </tr>       
+             
+
+          <tr>
+            <td><font style="font-family: Verdana;"> product id</font>
+            <td><input type="text" id="id" name="id" required="true" ngModel></td>
+        </tr>  
+            
+            <tr>
+                <td><font style="font-family: Verdana;"> product name</font>
+                <td><input type="text" id="name" name="name" required="true" ngModel></td>
+            </tr>    
+            <tr>
+                <td><font style="font-family: Verdana;"> product price</font>
+                <td><input type="text" id="cost" name="cost" required="true" ngModel></td>
+            </tr> 
+            <tr>
+                <td><font style="font-family: Verdana;"> product description</font>
+                <td><input type="text" id="description" name="description" required="true"ngModel></td>
+            </tr> 
+           
+
+                       
+                       <tr>
+                            <td colspan="4">
+                               <button type="submit" class="button"> upload</button>
+                            </td>
+                       </tr>
+                   </table>
+        <br>
+                   
+                        
+        <br>
+           </div>        
+              </form>
+   

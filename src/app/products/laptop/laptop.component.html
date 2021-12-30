@@ -1,0 +1,146 @@
+<div class="top">
+    <h1>Laptop</h1>
+  </div>
+  <div style="display: flex;flex-wrap: wrap;">
+    <div class="mobile1">
+        <div  *ngFor="let laptop of laptops; index as i" > 
+            <div *ngIf="i<3" >
+                <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/krjjde80/computer/w/j/x/na-thin-and-light-laptop-hp-original-imag5bg7ngmzfkqu.jpeg?q=70" alt=""
+                    style="width:318px; height: 250px;margin-left: 15px;">
+                     <h3>{{laptop.name}} {{laptop.description}}</h3>
+                     <h4>Cost:{{laptop.cost}}</h4>
+                     <button routerLink="/login">buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile1">
+            <div  *ngFor="let laptop of laptops; index as i" > 
+            <div *ngIf="i>=3&&i<6" >
+                <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/krjjde80/computer/w/j/x/na-thin-and-light-laptop-hp-original-imag5bg7ngmzfkqu.jpeg?q=70" alt=""
+                    style="width:318px; height: 250px;margin-left: 15px;">
+                     <h3>{{laptop.name}} {{laptop.description}}</h3>
+                     <h4>Cost:{{laptop.cost}}</h4>
+                     <button routerLink="/login">buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile1">
+        <div  *ngFor="let laptop of laptops; index as i" > 
+        <div *ngIf="i>=6&&i<9" >
+            <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/krjjde80/computer/w/j/x/na-thin-and-light-laptop-hp-original-imag5bg7ngmzfkqu.jpeg?q=70" alt=""
+         style="width:318px; height: 250px;margin-left: 15px;">
+                 <h3>{{laptop.name}} {{laptop.description}}</h3>
+                 <h4>Cost:{{laptop.cost}}</h4>
+                 <button routerLink="/login">buy now</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="mobile1">
+        <div  *ngFor="let laptop of laptops; index as i" > 
+        <div *ngIf="i>=9&&i<12" >
+            <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/krjjde80/computer/w/j/x/na-thin-and-light-laptop-hp-original-imag5bg7ngmzfkqu.jpeg?q=70" alt=""
+                style="width:318px; height: 250px;margin-left: 15px;">
+                 <h3>{{laptop.name}} {{laptop.description}}</h3>
+                 <h4>Cost:{{laptop.cost}}</h4>
+                 <button routerLink="/login">buy now</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+<!-- <div class="main">
+<div class="laptop">
+    
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/krjjde80/computer/w/j/x/na-thin-and-light-laptop-hp-original-imag5bg7ngmzfkqu.jpeg?q=70" alt=""
+         style="width:318px; height: 250px;margin-left: 15px;">
+         <h3>HP Pavilion Aero Ryzen 5 Hexa Core 5600U - (16 GB/512 GB SSD/Windows 10 Home)Laptop  (13.3 inches, Pale Rose Gold, 0.97 kg)</h3>
+         <h4>Cost:₹67,990</h4>
+         <button>Add to cart</button>
+    </div>
+
+    <div class="card" style="width: 22rem; height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/ku5ufm80/computer/4/u/k/na-gaming-laptop-dell-original-imag7csr9nqzcrkk.jpeg?q=70" alt=""
+         style="width:318px; height: 250px;margin-left: 15px;" >
+         <h3>DELL G15 Core i5 10th Gen - (8 GB/512 GB SSD/Windows 10/4 GB Graphics)Gaming Laptop  (15.6 inches, Dark Shadow Grey, 2.4 kg)
+         </h3>
+         <h4>Cost:₹69,690</h4>
+         <button>Add to cart</button>
+    </div>
+    
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/ku4ezrk0/computer/y/v/b/na-thin-and-light-laptop-asus-original-imag7bh52qsvjgqh.jpeg?q=70" alt=""
+         style="width:318px; height: 250px; margin-left: 15px;">
+         <h3>ASUS Core i5 10th Gen - (8 GB + 32 GB Optane/512 GB SSD/Windows 10 Home) Laptop  (15.6 inch, Transparent Silver, 1.80 Kg, With MS Office)</h3>
+         <h4>Cost:₹50,962</h4>
+         <button>Add to cart</button>
+    </div>
+    </div>
+    <br><br>
+    <div class="laptop">
+        <div class="card" style="width: 22rem;height: 30rem;">
+            <img src="https://rukminim1.flixcart.com/image/416/416/ku5ufm80/computer/l/i/u/inspiron-3515-thin-and-light-laptop-dell-original-imag7chq58xfqfga.jpeg?q=70" alt=""
+             style="width:300px; height: 250px;margin-left: 15px;" >
+             <h3>DELL Inspiron Ryzen 5 Quad Core 3450U - (8 GB/256 GB SSD/Windows 10) Inspiron 3515 Thin and Light Laptop  (15.6 inch, Carbon, 1.85 kg, With MS Office)</h3>
+             <h4>Cost:₹41,990</h4>
+             <button>Add to cart</button>
+        </div>
+        
+        <div class="card" style="width: 22rem;height: 30rem;">
+            <img src="https://rukminim1.flixcart.com/image/416/416/kp1imq80/computer/u/b/z/na-gaming-laptop-acer-original-imag3d63hk3h8nm2.jpeg?q=70" alt=""
+             style="width:318px; height: 250px;margin-left: 15px;">
+             <h3>acer Aspire 7 Core i5 10th Gen - (8 GB/512 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650)  Gaming Laptop  (15.6 inch, Black, 2.15 Kg)</h3>
+             <h4>Cost:₹52,990</h4>
+             <button>Add to cart</button>
+        </div>
+        
+        <div class="card" style="width: 22rem;height: 30rem;">
+            <img src="https://rukminim1.flixcart.com/image/416/416/keaaavk0/computer/x/m/y/lenovo-na-laptop-original-imafuzt8r5jqppfn.jpeg?q=70" alt=""
+             style="width:318px; height: 250px; margin-left: 15px;">
+             <h3>Lenovo IdeaPad 3 Core i3 10th Gen - (8 GB/256 GB SSD/Windows 10 Home)Laptop  (15.6 Inch, Platinum Grey, 1.7 kg, With MS Office)</h3>
+             <h4>Cost:₹39,990</h4>
+             <button>Add to cart</button>
+        </div>
+        </div>
+        <br><br>
+
+        <div class="laptop">
+            <div class="card" style="width: 22rem;height: 30rem;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kqe3low0/computer/m/g/r/inspiron-7415-2-in-1-laptop-dell-original-imag4ewka4uhnx4w.jpeg?q=70" alt=""
+                 style="width:318px; height: 250px;margin-left: 15px;" >
+                 <h3>DELL Inspiron Ryzen 5 Hexa Core 5500U - (8 GB/512 GB SSD/Windows 10) Inspiron 7415 2 in 1 Laptop  (14 Inch, Pebble Green, 1.56 KG, With MS Office)</h3>
+                 <h4>Cost:₹71,526</h4>
+                 <button>Add to cart</button>
+            </div>
+            
+            <div class="card" style="width: 22rem;height: 30rem;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/ksgehzk0/computer/r/c/k/predator-helios-300-gaming-laptop-acer-original-imag6yjdmwdrksyn.jpeg?q=70" alt=""
+                 style="width:318px; height: 250px;margin-left: 15px;">
+                 <h3>acer Predator Helios 300 Core i7 11th Gen - (16 GB/1 TB HDD/512 GB SSD/Windows 10 Home/6 GB Graphics) Gaming Laptop  (15.6 inch, Abyssal Black, 2.3 kg)
+                    </h3>
+                 <h4>Cost:₹1,24,990</h4>
+                 <button>Add to cart</button>
+            </div>
+            
+            <div class="card" style="width: 22rem;height: 30rem;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kgfg2vk0/computer/e/j/f/asus-vivobook-laptop-original-imafwzf5e8awkm9x.jpeg?q=70" alt=""
+                 style="width:318px; height: 250px; margin-left: 15px;">
+                 <h3>ASUS Vivobook 15 Core i3 11th Gen - (8 GB/256 GB SSD/Windows 10 Home) Laptop  (15.6 inch, Transparent Silver, 1.80 kg, With MS Office)</h3>
+                 <h4>Cost:₹40,990</h4>
+                 <button>Add to cart</button>
+            </div>
+            </div>
+        </div> -->
+           

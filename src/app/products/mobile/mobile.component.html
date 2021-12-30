@@ -1,0 +1,137 @@
+<div class="top">
+    <h1>Mobile</h1>
+  </div>
+
+<!-- <div class="mobile">
+
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/kmjhw280/mobile/h/k/v/galaxy-m12-galaxy-m12-samsung-original-imagffy3wzrmy7ep.jpeg?q=70" alt=""
+         style="width:150px; height: 300px;margin-left: 90px;" class="img1">
+         <h3>SAMSUNG Galaxy M12 (Blue, 64 GB)  (4 GB RAM)
+
+            </h3>
+         <h4>Cost:₹11,289</h4>
+         <button>Add to cart</button>
+    </div>
+
+    <div class="card" style="width: 22rem; height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/kmmcrrk0/mobile/5/w/u/8-pro-rmx3081-realme-original-imagfgpgcxyjufz3.jpeg?q=70" alt=""
+         style="width:150px; height: 300px;margin-left: 90px;" >
+         <h3>realme 8 Pro (Infinite Black, 128 GB)  (8 GB RAM)</h3>
+         <h4>Cost:₹19,999</h4>
+         <button>Add to cart</button>
+    </div>
+    
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/ksm49e80/mobile/n/d/q/y33s-v2109-vivo-original-imag65dvsgzvp9wp.jpeg?q=70" alt=""
+         style="width:150px; height: 300px; margin-left: 90px;">
+         <h3>vivo Y33s (Midday Dream, 128 GB)  (8 GB RAM)</h3>
+         <h4>Cost:₹18,990</h4>
+         <button>Add to cart</button>
+    </div>
+    </div> -->
+    <div style="display: flex;flex-wrap: wrap;">
+<div class="mobile1">
+    <div  *ngFor="let mobile of mobiles; index as i" > 
+        <div *ngIf="i<4" >
+            <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kmjhw280/mobile/h/k/v/galaxy-m12-galaxy-m12-samsung-original-imagffy3wzrmy7ep.jpeg?q=70" alt=""
+                 style="width:150px; height: 300px;margin-left: 90px;" class="img1">
+                 <h3>{{mobile.name}} {{mobile.description}}</h3>
+                 <h4>Cost:{{mobile.cost}}</h4>
+                 <button routerLink="/login">buy now</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobile1">
+        <div  *ngFor="let mobile of mobiles; index as i" > 
+        <div *ngIf="i>=4&&i<8" >
+            <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kmjhw280/mobile/h/k/v/galaxy-m12-galaxy-m12-samsung-original-imagffy3wzrmy7ep.jpeg?q=70" alt=""
+                 style="width:150px; height: 300px;margin-left: 90px;" class="img1">
+                 <h3>{{mobile.name}} {{mobile.description}}</h3>
+                 <h4>Cost:{{mobile.cost}}</h4>
+                 <button routerLink="/login">buy now</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobile1">
+    <div  *ngFor="let mobile of mobiles; index as i" > 
+    <div *ngIf="i>=8&&i<12" >
+        <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+            <img src="https://rukminim1.flixcart.com/image/416/416/kmjhw280/mobile/h/k/v/galaxy-m12-galaxy-m12-samsung-original-imagffy3wzrmy7ep.jpeg?q=70" alt=""
+             style="width:150px; height: 300px;margin-left: 90px;" class="img1">
+             <h3>{{mobile.name}} {{mobile.description}}</h3>
+             <h4>Cost:{{mobile.cost}}</h4>
+             <button routerLink="/login">buy now</button>
+        </div>
+    </div>
+</div>
+</div>
+<div class="mobile1">
+    <div  *ngFor="let mobile of mobiles; index as i" > 
+    <div *ngIf="i>=9&&i<12" >
+        <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+            <img src="https://rukminim1.flixcart.com/image/416/416/kmjhw280/mobile/h/k/v/galaxy-m12-galaxy-m12-samsung-original-imagffy3wzrmy7ep.jpeg?q=70" alt=""
+             style="width:150px; height: 300px;margin-left: 90px;" class="img1">
+             <h3>{{mobile.name}} {{mobile.description}}</h3>
+             <h4>Cost:{{mobile.cost}}</h4>
+             <button routerLink="/login">buy now</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+        
+   
+        
+        <!-- <div class="card" style="width: 22rem;height: 30rem;">
+            <img src="https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/c/u/e/iphone-11-pro-512-u-mwcd2hn-a-apple-0-original-imafkg2fhzhzzh5s.jpeg?q=70" alt=""
+             style="width:200px; height: 300px;margin-left: 70px;">
+             <h3>{{mobile.description}}</h3>
+             <h4>Cost:₹1,17,100</h4>
+             <button>Add to cart</button>
+        </div>
+        
+        <div class="card" style="width: 22rem;height: 30rem;">
+            <img src="https://rukminim1.flixcart.com/image/416/416/kox8b680/mobile/r/z/z/11x-pro-5g-11x-pro-mi-original-imag39qjujuhjerp.jpeg?q=70" alt=""
+             style="width:150px; height: 300px; margin-left: 90px;">
+             <h3>Mi 11X Pro 5G (Lunar White, 128 GB)  (8 GB RAM)
+                </h3>
+             <h4>Cost:₹35,149</h4>
+             <button>Add to cart</button>
+        </div>
+        </div> -->
+     
+
+        <!-- <div class="mobile">
+            <div class="card" style="width: 22rem;height: 30rem;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/ku4ezrk0/mobile/p/e/4/c31-mzb0a0jin-poco-original-imag7bzqxgdhgf2n.jpeg?q=70" alt=""
+                 style="width:150px; height: 300px;margin-left: 90px;" >
+                 <h3>POCO C31 (Royal Blue, 64 GB)  (4 GB RAM)</h3>
+                 <h4>Cost:₹9,499</h4>
+                 <button>Add to cart</button>
+            </div>
+            
+            <div class="card" style="width: 22rem;height: 30rem;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/jsdj8nk0/mobile/7/n/z/samsung-galaxy-s10-plus-sm-g975fckgins-original-imafdys4d6h8phu6.jpeg?q=70" alt=""
+                 style="width:150px; height: 300px;margin-left: 90px;" >
+                 <h3>SAMSUNG Galaxy S10 Plus (Ceramic Black, 512 GB)  (8 GB RAM)</h3>
+                 <h4>Cost:₹91,900</h4>
+                 <button>Add to cart</button>
+            </div>
+            
+            
+            <div class="card" style="width: 22rem;height: 30rem;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kulk9zk0/mobile/5/t/f/e40-parl0010in-motorola-original-imag7zz7rzhrkrk2.jpeg?q=70" alt=""
+                 style="width:150px; height: 300px;margin-left: 90px;">
+                 <h3>MOTOROLA e40 (Carbon Gray, 64 GB)  (4 GB RAM)</h3>
+                 <h4>Cost:₹9,999</h4>
+                 <button>Add to cart</button>
+            </div>
+            </div> -->
+        <router-outlet></router-outlet>
+
+            

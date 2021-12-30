@@ -1,0 +1,28 @@
+<div class="top">
+    <h1>Laptop</h1>
+    <a class="a1" routerLink="/ahome">Home</a>&nbsp; &nbsp;
+    <a class="a1" routerLink="/uproducts">Product</a>
+  </div>
+    
+
+<div class="mobile1">
+    
+    <div  *ngFor="let laptop of laptops; index as i " > 
+        <div class="body">
+            <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/krjjde80/computer/w/j/x/na-thin-and-light-laptop-hp-original-imag5bg7ngmzfkqu.jpeg?q=70" alt=""
+                    style="width:318px; height: 250px;margin-left: 15px;">s
+                <h3>Product id: {{laptop.id}}</h3>
+                 <h3>name:{{laptop.name}} {{laptop.description}}</h3>
+                 <h4>Cost:{{laptop.cost}}</h4>
+                 <button (click)= submitl(laptop)>buy now</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+ <router-outlet></router-outlet>
+
+            
+

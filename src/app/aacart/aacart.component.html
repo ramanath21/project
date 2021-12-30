@@ -1,0 +1,95 @@
+<body>
+    <nav>
+        <div class="menu">
+          <div class="logo">
+            <a href="#">Shopping hub</a>
+          
+            
+              
+          </div>
+          <ul>
+            <li><a href="#" routerLink="/home">LogOut</a></li>
+          </ul>
+        </div>
+      </nav>
+<br>
+<br>
+
+<form id="adform" #myForm="ngForm" (ngSubmit)="onSub(myForm.value)">
+  <div class="container-fluid">    
+      <div class="row">
+        <div class="col-sm-12">
+              
+        </div>
+       </div>    
+   </div>
+
+  <br>
+  <div class="tablec"> 
+  <table class="frmtbl"  *ngFor="let cart of carts; index as i ">
+      
+      <tr border="1" class="hdrow">
+          
+       </tr>       
+      
+    <tr>
+      <td><font style="font-family: Verdana;">Product id</font>
+      <td><input id="id" name="id" placeholder="{{cart.id}}"  [(ngModel)]="cart.id"></td>
+  </tr>  
+  
+  <tr>
+    <td><font style="font-family: Verdana;">Product name</font>
+    <td><input id="name" name="name" placeholder="{{cart.name}}"  [(ngModel)]="cart.name"></td>
+</tr>  
+  
+<tr>
+  <td><font style="font-family: Verdana;">Product description</font>
+  <td><input  id="description" name="description" placeholder="{{cart.description}}" [(ngModel)]="cart.description"></td>
+</tr>  
+  
+<tr>
+  <td><font style="font-family: Verdana;">Product price</font>
+  <td><input  id="cost" name="cost" placeholder="{{cart.cost}}"  [(ngModel)]="cart.cost"></td>
+</tr>  
+    <tr>
+      <td><font style="font-family: Verdana;">Full name</font>
+      <td><input type="text" id="uname" name="uname" required="true" ngModel></td>
+  </tr>  
+      
+      <tr>
+          <td><font style="font-family: Verdana;"> address</font>
+          <td><input type="text" id="address" name="address" required="true" ngModel></td>
+      </tr>    
+      <tr>
+          <td><font style="font-family: Verdana;"> phone</font>
+          <td><input type="text" id="phone" name="phone" required="true" ngModel></td>
+      </tr> 
+      <tr>
+          <td><font style="font-family: Verdana;"> mode</font>
+          <td><input type="text" id="mode" name="mode" required="true"ngModel></td>
+      </tr> 
+     
+     
+
+                 
+                 <tr>
+                      <td >
+                      
+                        </td>
+                        <td>
+                         <button type="submit" class="button"> place the order</button>
+          
+                      </td>
+                 </tr>
+                 
+             </table>
+             <p class="pp"> For Mode CC:Cash on delevery , CD:cards , UPI:upi ,  if other typed it will be automatically set as cc</p>
+  <br>
+             
+                  
+  <br>
+     </div>   
+          
+        </form>
+
+    </body>

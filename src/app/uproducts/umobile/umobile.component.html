@@ -1,0 +1,28 @@
+<div class="top">
+    <h1>Mobile</h1>
+    <a class="a1" routerLink="/ahome">Home</a>&nbsp; &nbsp;
+    <a class="a1" routerLink="/uproducts">Product</a>
+  </div>
+    
+
+<div class="mobile1">
+    
+    <div  *ngFor="let mobile of mobiles; index as i " > 
+        <div class="body">
+            <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/kmjhw280/mobile/h/k/v/galaxy-m12-galaxy-m12-samsung-original-imagffy3wzrmy7ep.jpeg?q=70" alt=""
+                 style="width:150px; height: 280px;margin-left: 90px;" class="img1">
+                <h3>Product id: {{mobile.id}}</h3>
+                 <h3>name:{{mobile.name}} {{mobile.description}}</h3>
+                 <h4>Cost:{{mobile.cost}}</h4>
+                 <button (click)= submit(mobile)>buy now</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+ <router-outlet></router-outlet>
+
+            
+

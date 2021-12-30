@@ -1,0 +1,47 @@
+
+.headphone{
+    display: flex;
+    width: 1280px;
+    justify-content: space-evenly;
+    padding: 30px;
+ 
+}
+
+.card{
+    padding: 10px 10px 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(194, 100, 17);
+}
+button{
+    width: 100px;
+    height: 40px;
+}
+.main{
+    background-image: url();
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    flex:1;
+}
+.card:hover {
+    border:5px solid grey;
+    background-color:whitesmoke;
+  }
+button:hover{
+      border: 3px solid goldenrod;
+      
+  }
+  .top{
+    background-color:black;
+    text-align: center;
+    color: white;
+    border:5px solid grey;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.mobile1{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}

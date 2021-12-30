@@ -1,0 +1,42 @@
+<div class="container">
+
+    <div class="left-section">
+
+      <div class="header">
+
+        <h1 class="animation a6 " style="color:white;">Welcome!</h1>
+
+        <h4 class="animation a7" style="color:bisque;">user Log in.</h4>
+
+      </div> 
+      <form (ngSubmit)="onSubmit(myForm.value)" #myForm="ngForm">
+
+        <div class="form">
+  
+          <input type="text" class="form-field animation a3" placeholder="user id" name="id" id="id"   ngModel required />
+  
+          <input type="password" class="form-field animation a4" placeholder="Password" name="password" id="password"  ngModel  required/>
+  
+          <button   class="form-field animation a5" >Login</button>
+  
+        </div>
+        <br><br>
+        <button class="bbutton animation a9" routerLink="/register">Register</button>
+  
+      </form>
+
+    
+  
+      </div>
+  
+      <div class="right-section">
+          <div class="push">
+        <div class="header1">
+
+            
+    
+          </div>
+        
+      </div>
+  </div>
+    </div>

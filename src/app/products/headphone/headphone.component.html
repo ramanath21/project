@@ -1,0 +1,149 @@
+<div class="top">
+    <h1>Headphones</h1>
+  </div>
+
+  <div style="display: flex;flex-wrap: wrap;">
+    <div class="mobile1">
+        <div  *ngFor="let headphone of headphones; index as i" > 
+            <div *ngIf="i<3" >
+                <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/k7285u80/headphone/4/3/u/boat-rockerz-370-original-imafpdzhywghfabu.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+                     <h3>{{headphone.name}} {{headphone.description}}</h3>
+                     <h4>Cost:{{headphone.cost}}</h4>
+                     <button routerLink="/login">buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile1">
+            <div  *ngFor="let headphone of headphones; index as i" > 
+            <div *ngIf="i>=3&&i<6" >
+                <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/k7285u80/headphone/4/3/u/boat-rockerz-370-original-imafpdzhywghfabu.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+                     <h3>{{headphone.name}} {{headphone.description}}</h3>
+                     <h4>Cost:{{headphone.cost}}</h4>
+                     <button routerLink="/login">buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile1">
+        <div  *ngFor="let headphone of headphones; index as i" > 
+        <div *ngIf="i>=6&&i<9" >
+            <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k7285u80/headphone/4/3/u/boat-rockerz-370-original-imafpdzhywghfabu.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+                 <h3>{{headphone.name}} {{headphone.description}}</h3>
+                 <h4>Cost:{{headphone.cost}}</h4>
+                 <button routerLink="/login">buy now</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="mobile1">
+        <div  *ngFor="let headphone of headphones; index as i" > 
+        <div *ngIf="i>=9&&i<12" >
+            <div class="card" style="width: 22rem;height: 30rem;margin-left: 35px;">
+                <img src="https://rukminim1.flixcart.com/image/416/416/k7285u80/headphone/4/3/u/boat-rockerz-370-original-imafpdzhywghfabu.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+                 <h3>{{headphone.name}} {{headphone.description}}</h3>
+                 <h4>Cost:{{headphone.cost}}</h4>
+                 <button routerLink="/login">buy now</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="main">
+<div class="headphone">
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/k7285u80/headphone/4/3/u/boat-rockerz-370-original-imafpdzhywghfabu.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+         <h3>boAt Rockerz 370 Bluetooth Headset  (Buoyant Black, On the Ear)</h3>
+         <h4>Cost:₹1,184</h4>
+         <button>Add to cart</button>
+    </div>
+    
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/headphone/dynamic/j/g/g/bluedio-t2-plus-red-original-imaekaxkqurrupeh.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+         <h3>Bluedio T2 Plus Red Bluetooth without Mic Headset  (Red, On the Ear)</h3>
+         <h4>Cost:₹4,271</h4>
+         <button>Add to cart</button>
+    </div>
+    
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/k7531jk0/headphone/h/r/y/redgear-comet-7-1-usb-gaming-headphones-with-7-changeable-led-original-imafpfzbmuqqyh5g.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+         <h3>Redgear Comet 7.1 USB Gaming Headphones  (Black, On the Ear)</h3>
+         <h4>Cost:₹4,271</h4>
+         <button>Add to cart</button>
+    </div>
+</div>
+
+
+<div class="headphone">
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/612/612/jh0vb0w0/headphone/t/7/6/sony-mdr-zx110-a-original-imaf553gdwgxbetq.jpeg?q=70" alt=""
+         style="width:318px; height: 300px; margin-left: 15px;">
+         <h3>SONY ZX110A Wired without Mic Headset  (White, On the Ear)</h3>
+         <h4>Cost:₹1,390</h4>
+         <button>Add to cart</button>
+    </div>
+    
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/612/612/j58hj0w0/headset/extra-bass/q/5/y/sony-mdr-xb450ap-original-imaevftn67xkznr2.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+         <h3>SONY XB450AP Wired Headset  (Blue, On the Ear)</h3>
+         <h4>Cost:₹2,489</h4>
+         <button>Add to cart</button>
+    </div>
+    
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/kavefm80/headphone/h/a/s/wh-ch710n-sony-original-imafscdmhsnq77yw.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+         <h3>SONY WH-CH710N enabled Bluetooth Headset  (Black, On the Ear)</h3>
+         <h4>Cost:₹14,990</h4>
+         <button>Add to cart</button>
+    </div>
+</div>
+
+
+<div class="headphone">
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/krxtrww0/headphone/1/e/k/zeb-thunder-zebronics-original-imag5mm6enddcrrm.jpeg?q=70" alt=""
+         style="width:318px; height: 300px; margin-left: 15px;">
+         <h3>ZEBRONICS Zeb - Thunder Wired, Bluetooth Headset  (Neon Yellow, On the Ear)</h3>
+         <h4>Cost:₹1,399</h4>
+         <button>Add to cart</button>
+    </div>
+    
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/416/416/kmz7qfk0/headphone/b/x/t/jblt660ncblk-jbl-original-imagfr89bgzwem7g.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+         <h3>JBL Tune 660NC Active Noise Cancelling Bluetooth Headset  (Black, On the Ear)</h3>
+         <h4>Cost:₹6,999</h4>
+         <button>Add to cart</button>
+    </div>
+    
+    <div class="card" style="width: 22rem;height: 30rem;">
+        <img src="https://rukminim1.flixcart.com/image/312/312/keaaavk0-0/headphone/f/i/3/gs430-cosmic-byte-original-imafvy35cgvhf4by.jpeg?q=70" alt=""
+         style="width:318px; height: 300px;margin-left: 15px;">
+         <h3>Cosmic Byte GS430 Wired Gaming Headset  (Camo Green, On the Ear)</h3>
+         <h4>Cost:₹1,799</h4>
+         <button>Add to cart</button>
+    </div>
+</div>
+</div> -->
+

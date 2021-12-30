@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a>
+    <div class="col-md-4" style="color:white;font-size:120%;"><b>admin cell </b></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="toggle-navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar1">
+    <ul class="navbar-nav ml-auto">
+    <li class="nav-item active">
+    <a class="nav-link" href=" " routerLink="/form" >+ Headphone</a></li>
+    <li><a class="nav-link" href=" " routerLink="/form1" >+ Laptop</a></li>
+    <li><a class="nav-link" href=" " routerLink="/form2" >+ Mobile</a></li>
+    <li class="nav-item">
+    <a class="nav-link" href=" "  routerLink="/home"  >LOGOUT</a></li>
+    </ul>
+    </div>
+    </nav>
+    <div class="col-md-12 col-lg-12">
+    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+      
+      </div>
+    
+    
+   <br>
+
+  <div class="tabelcontent">
+    
+    <table style="border:1px solid blue;" width="80%" align="center" class="content-table">
+      <thead>
+    <tr>
+    <th colspan="10" class="text-center">
+    Order Details
+    </th>
+    </tr>
+    <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>User Name</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Mode</th>
+   
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ordertable of ordertables"> 
+       <td>{{ordertable.id}}</td>
+       <td>{{ordertable.name}}</td>
+       <td>{{ordertable.description}}</td>
+       <td>{{ordertable.cost}}</td>
+       <td>{{ordertable.uname}}</td>
+       <td>{{ordertable.address}}</td>
+       <td>{{ordertable.phone}}</td>
+       <td>{{ordertable.mode}}</td>
+     
+     
+  </tr>
+  </tbody>
+    </table>
+    
+</div>
+<router-outlet></router-outlet>
+ 
+    
